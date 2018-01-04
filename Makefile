@@ -10,7 +10,7 @@ LIBS = -lm
 _DEPS = hellomake.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
--OBJ = hellomake.o hellofunc.o
+_OBJ = hellomake.o hellofunc.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 $(ODIR)/%.o: %.cpp $(DEPS)
