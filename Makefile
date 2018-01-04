@@ -8,12 +8,12 @@ LDIR = ../lib
 LIBS = -lm
 
 _DEPS = hellomake.h
-DEPS = $(patsubst %,$(DIR)/%,$(_DEPS))
+DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 -OBJ = hellomake.o hellofunc.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
-$(ODIR)/%.o: %.cpp $(DEPS_
+$(ODIR)/%.o: %.cpp $(DEPS)
         $(CXX) -c -o $@ $< $(CXXFLAGS)
 
 hellomake: $(OBJ)
