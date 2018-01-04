@@ -5,7 +5,7 @@ CXXFLAGS = -I$(IDIR)
 ODIR = obj
 LDIR = ../lib
 
-LIBS = 
+LIBS = -lm
 
 _DEPS = hellomake.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
