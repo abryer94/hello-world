@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main (){ 
+
+  int x1{};
+  int x2{};
+  int y1{};
+  int y2{};
+  int z1{};
+  int z2{};
+  double result{};
+  
+  cout << " \n";
+  cout << "Welcome to Alex's 3D distance calculator. \n" ;
+  cout << "You will need to enter the x, y, and z coordinates of the two query points. \n\n";
+    
+     cout << "Enter x1: ";
+     cin >> x1;
+     
+     cout << "Enter y1: ";
+     cin >> y1;
+     
+     cout << "Enter z1: ";
+     cin >> z1;
+     
+     cout << "Enter x2: ";
+     cin >> x2;
+     
+     cout >> "Enter y2: ";
+     cin >> y2;
+     
+     cout >> "Enter z2: ";
+     cin >> z2;
+     
+     result = sqrt(pow(x2-x1),2)+pow(y2-y1),2)+pow(z2-z1,21));
+     
+     cout << "\nThe distance between these two points is: "<< result << endl;
+     
+     
+}
