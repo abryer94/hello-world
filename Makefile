@@ -17,7 +17,7 @@ $(ODIR)/%.o: %.cpp $(DEPS)
         $(CXX) -c -o $@ $< $(CXXFLAGS)
 
 hellomake: $(OBJ)
-        g++ -o $@ $^ $(CXXFLAGS) $(LIBS)
+        $(CXX) -o $@ $^ $(CXXFLAGS) $(LIBS)
 
 .PHONY: clean
 
